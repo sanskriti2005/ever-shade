@@ -18,6 +18,7 @@ const fetchData = async (collectionName, arr) => {
       })
       return arr
     } catch (error) {
+      console.log(error)
       alert("Error in fetching new arrivals")
     }
 }
@@ -37,14 +38,13 @@ const displaynewArrivalProducts = async () => {
                 <p>${item.description.slice(0, 50)}</p>
                 <p class="price">$${item.price}</p>
             <div id="${item.id}">
-                <button type="button"><i class="fa-solid fa-heart fa-lg"></i></button>
-                <button type="button"><i class="fa-solid fa-basket-shopping fa-lg"></i></button>
+                <button type="button" onclick="addToFavs(this)"><i class="fa-solid fa-heart fa-lg"></i></button>
+                <button type="button" onclick="addToCart(this)"><i class="fa-solid fa-basket-shopping fa-lg"></i></button>
             </div>
         </div>`
 
       }   
     })
-    console.log(dataFetching)
   } catch (error) {
     alert("error in display data")
   }
@@ -67,8 +67,8 @@ const displaynewInsiderProducts = async () => {
 
       }   
     })
-    console.log(dataFetching)
   } catch (error) {
+    console.log(error)
     alert("error in display data")
   }
 }
