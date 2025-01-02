@@ -175,6 +175,41 @@ h4{
 .new-arrivals-card > div > button:hover{
     color: rgb(74, 74, 74);
 }
+#insider-awards{
+    padding: 1rem;
+}
+/* last set of cards */
+#footer-cards{
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+.footer-card{
+    border-radius: 5px;
+}
+.footer-card > img{
+    height: 16rem;
+    width: 25rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.footer-card:hover{
+    text-decoration: underline;
+}
+.footer-card > div{
+    padding: 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.footer-card:first-child > div{
+    background-color: rgb(212, 212, 212);
+}
+.footer-card:nth-child(2) > div{
+    background-color: rgb(172, 206, 244);
+}
+.footer-card:nth-child(3) > div{
+    background-color: rgb(173, 216, 223);
+}
 /* Footer Styling */
 #foot-er{
     position: fixed;
