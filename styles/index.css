@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* min-height: 100vh; */
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Navbar Styling */
+#nav{
+    width: 100%;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: #FFFFFA;
+}
+
+#nav-links{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    color: #646F58;
+    font-weight:900;
+}
+#nav-links > div > a {
+    text-decoration: none;
+    color: #504B3A;
+}
+
+#nav-links > div > a:hover{
+    color: #8963BA;
+}
+
+#search-bar{
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+#navbar > div:nth-child(2){
+    width: 40%;
+}
+#nav-links > div > a{
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+}
+#nav-links > div > h6{
+    font-weight: 500;
+}
+#nav-links p{
+    font-size: 0.5rem;
+}
+#nav-links > div > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+#bottom-nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+}
+
+.cards-container{
+    display: flex;
+    padding: 0.4rem;
+    gap: 0.4rem;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.card:hover{
+    text-decoration: underline;
+}
+.card:first-child > div{
+    background-color: rgb(140, 211, 211);
+}
+.card:nth-child(2) > div{
+    background-color: black;
+    color: white;
+}
+.card:nth-child(3) > div{
+    background-color: rgb(183, 133, 197);
+}
+.card:nth-child(4) > div{
+    background-color: rgb(84, 126, 126);
+    color: white;
+}
+.card > img{
+    height: 20rem;
+    width: 30rem;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+/* Footer Styling */
+#foot-er{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer{
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E24;
+    color: #F7EBE8;
+}
+/* home page styling */
