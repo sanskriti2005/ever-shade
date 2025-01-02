@@ -13,6 +13,10 @@ function loadNavBar(){
                 <div><a href=""><i class="fa-solid fa-heart fa-lg"></i></a></div>
                 <div><a href=""><i class="fa-solid fa-basket-shopping fa-lg"></i></a></div>
             </div>
-        </div>`
+        </div>
+        <div id="sign-up">
+            <div><a href=""><div><h6>Sign-In</h6><p>for FREE shipping</p></div></a></div>
+            <button type="button" onclick="signup()">Sign-up</button>
+            </div>`
 }
 loadNavBar();
