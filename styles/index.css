@@ -80,6 +80,36 @@ h4{
     color: white;
     padding: 0.8rem;
 }
+#sign-up{
+    display: none;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+#sign-up > div{
+    display: flex;
+    flex-direction: column;
+}
+#sign-up>div>h6{
+    font-weight: 600;
+}
+#sign-up > div > a{
+    color: black;
+}
+#sign-up p{
+    font-size: 0.8rem;
+}
+#sign-up > button{
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 0.4rem;
+}
+#sign-up > button:hover{
+    cursor: pointer;
+}
 
 /* main section */
 /* reusable css */
@@ -155,6 +185,16 @@ h4{
 }
 .price{
     font-weight: 600;
+}
+.new-arrivals-card > button{
+    border: 2px solid black;
+    font-weight: 800;
+    padding: 0.2rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.new-arrivals-card > button:hover{
+    cursor: pointer;
 }
 .new-arrivals-card:hover{
     transform: translateY(-10px);
@@ -235,4 +275,45 @@ h4{
     background-color: #1E1E24;
     color: #F7EBE8;
 }
-/* home page styling */
+
+/* media queries */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    #nav-links > div:nth-child(1){
+        display: none;
+    }
+    #nav-links > div:nth-child(2){
+        display: none;
+    }
+    #nav-links > div:nth-child(3){
+        display: none;
+    }
+     #bottom-nav{
+        background-color: white;
+        color: black;
+        font-size: 0.8rem;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+     }
+     #bottom-nav > div{
+        padding: 0.4rem;
+        border-radius: 3px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+     }
+}
+@media screen and (max-width: 600px) {
+    #nav-links > div:nth-child(1){
+        display: none;
+    }
+    #nav-links > div:nth-child(2){
+        display: none;
+    }
+    #nav-links > div:nth-child(3){
+        display: none;
+    }
+    #bottom-nav{
+        display: none;
+    }
+    #sign-up{
+        display: flex;
+    }
+}
