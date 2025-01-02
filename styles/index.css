@@ -211,11 +211,20 @@ h4{
     background-color: rgb(173, 216, 223);
 }
 /* Footer Styling */
-#foot-er{
-    position: fixed;
+#footer-div{
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
+}
+#footer-div > div:first-child{
+    text-align: center;
+    font-size: smaller;
+    padding: 0.4rem;
+    background-color: rgb(232, 232, 232);
+}
+#footer-div > div:first-child:hover{
+    text-decoration: underline;
 }
 
 #footer{
