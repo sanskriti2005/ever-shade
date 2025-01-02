@@ -13,6 +13,9 @@ li{
 a{
     text-decoration: none;
 }
+h4{
+    margin: 0.4rem 2rem;
+}
 /* Navbar Styling */
 #nav{
     width: 100%;
@@ -78,6 +81,8 @@ a{
     padding: 0.8rem;
 }
 
+/* main section */
+/* reusable css */
 .cards-container{
     display: flex;
     padding: 0.4rem;
@@ -89,7 +94,12 @@ a{
     display: flex;
     flex-direction: column;
 }
-.card > div{
+
+/* offer cards (top cards) */
+#offer-cards{
+    padding: 1rem;
+}
+.offer-card > div{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -97,28 +107,73 @@ a{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.card:hover{
+.offer-card:hover{
     text-decoration: underline;
 }
-.card:first-child > div{
+.offer-card:first-child > div{
     background-color: rgb(140, 211, 211);
 }
-.card:nth-child(2) > div{
+.offer-card:nth-child(2) > div{
     background-color: black;
     color: white;
 }
-.card:nth-child(3) > div{
+.offer-card:nth-child(2) > div:hover{
+    text-decoration: underline;
+}
+.offer-card:nth-child(3) > div{
     background-color: rgb(183, 133, 197);
 }
-.card:nth-child(4) > div{
+.offer-card:nth-child(4) > div{
     background-color: rgb(84, 126, 126);
     color: white;
 }
-.card > img{
+.offer-card:nth-child(4) > div:hover{
+    text-decoration: underline;
+}
+.offer-card > img{
     height: 20rem;
     width: 30rem;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+
+/* new arrivals (secons secion of cards) */
+#new-arrivals{
+    padding: 2rem;
+    display: flex;
+}
+.new-arrivals-card{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-grow: 1;
+}
+.price{
+    font-weight: 600;
+}
+.new-arrivals-card:hover{
+    transform: translateY(-10px);
+}
+.new-arrivals-card > img{
+    height: 10rem;
+    width: 10rem;
+}
+.new-arrivals-card > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.new-arrivals-card > div > button{
+    border: none;
+    background-color: white;
+}
+.new-arrivals-card > div > button:hover{
+    color: rgb(74, 74, 74);
 }
 /* Footer Styling */
 #foot-er{
