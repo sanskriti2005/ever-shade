@@ -1,5 +1,8 @@
 import { db } from "./firestoreConfig.js";
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+import { loginData } from "./loginData.js";
+
+console.log(loginData)
 
 // catch basic elements
 const newArrivalsCont = document.getElementById("new-arrivals")
@@ -55,7 +58,8 @@ const displaynewInsiderProducts = async () => {
     insiderRewardsCont.innerHTML = ``
     dataToBeDisplayed.forEach((item, i) => {
       if(i > 10 && i<20){
-        insiderRewardsCont.innerHTML += `
+        if(loginData.length < 1){
+          insiderRewardsCont.innerHTML += `
       <div class="card new-arrivals-card">
             <img src="https:${item.image_link}"
                 alt="${item.product_type} Image">
@@ -64,6 +68,16 @@ const displaynewInsiderProducts = async () => {
                 <p class="price">Points: ${item.price < 5 ? "100": "200"}</p>
                 <button type="button" onclick="signin()">Signin to recieve</button>
         </div>`
+        } else{
+          insiderRewardsCont.innerHTML += `
+      <div class="card new-arrivals-card">
+            <img src="https:${item.image_link}"
+                alt="${item.product_type} Image">
+                <h5>${item.name}</h5>
+                <p>${item.description.slice(0, 50)}</p>
+                <p class="price">Points: ${item.price < 5 ? "100": "200"}</p>
+        </div>`
+        }
 
       }   
     })
