@@ -1,0 +1,75 @@
+
+/* main form styling */
+#signin-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    width: 40%;
+    margin: 2rem auto;
+    border: 1px solid #2b3521;
+    padding: 2rem 0;
+    border-radius: 10px;
+    height: 25rem;
+}
+.logo{
+    color: #646F58;
+    font-weight:900;
+    font-size: 3rem;
+}
+.logo + div{
+    width: 90%;
+    border-bottom: 3px solid #2b3521;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+    align-items: center;
+}
+.form input, .form button{
+    padding: 0.2rem 0.8rem;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.form button{
+    background-color: #a9b798;
+    border: none;
+}
+.form button:hover{
+    background-color: #838e74;
+}
+
+/* Sliding tabs css */
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3cabb;
+    border-radius: 20px;
+    position: relative;
+    padding: 0.3rem;
+    width: 85%;
+    margin: auto;
+}
+.tabs > button{
+    width: 50%;
+    font-weight: 700;
+    color: #141a0e;
+    background: transparent;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    /* what does this do? */
+    z-index: 2; 
+}
+
+.tabs .active{
+    background-color: #e6ebe1;
+    border-radius: inherit;
+    transition: all 200ms;
+}
