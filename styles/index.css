@@ -287,18 +287,22 @@ h4{
     #nav-links > div:nth-child(3){
         display: none;
     }
-     #bottom-nav{
+    #bottom-nav{
         background-color: white;
         color: black;
         font-size: 0.8rem;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-     }
-     #bottom-nav > div{
+    }
+    #bottom-nav > div{
         padding: 0.4rem;
         border-radius: 3px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-     }
+    }
+    #footer-cards{
+        overflow-x: scroll;
+        scrollbar-width: 0;
+    }
 }
 @media screen and (max-width: 600px) {
     #nav-links > div:nth-child(1){
@@ -315,5 +319,9 @@ h4{
     }
     #sign-up{
         display: flex;
+    }
+    #footer-cards{
+        overflow-x: scroll;
+        scrollbar-width: 0;
     }
 }
