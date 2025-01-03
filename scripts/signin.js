@@ -65,6 +65,7 @@ async function signUpUser(email, password, name) {
         // then sedning data to thae reference (or building it in the db if it isn;t there)
         await setDoc(userDocRef, {
             name: name,
+            id: user.uid,
             email: email,
             wishlist: [],
             cart: []
@@ -89,6 +90,7 @@ loginForm.addEventListener("submit", async (e) => {
     // after successfully loggin the user-in, we store their data into the localStorage for their further use
     try {
         const user = await logInUser(email, password)
+        console.log(user)
         localStorage.setItem("loginData", JSON.stringify(user));
         window.location.href = "index.html"
         console.log(user)
@@ -108,7 +110,6 @@ async function logInUser(email, password) {
         const userDocRef = await doc(db, "users", user.uid)
         // get the document from the firestore collection of users
         const loggedInUser = await getDoc(userDocRef)
-
         alert("User successfully logged in!")
         // return the userObj
         return loggedInUser.data()

@@ -13,14 +13,18 @@
     border-radius: 10px;
     height: 25rem;
 }
-.logo{
+.logo + div{
+    width: 90%;
+    border-bottom: 3px solid #2b3521;
+}
+.logo > a{
     color: #646F58;
     font-weight:900;
     font-size: 3rem;
 }
-.logo + div{
-    width: 90%;
-    border-bottom: 3px solid #2b3521;
+.logo > a:hover{
+    color: #161c10;
+    cursor: pointer;
 }
 .form{
     display: flex;
