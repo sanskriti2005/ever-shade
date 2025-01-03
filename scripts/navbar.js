@@ -4,7 +4,7 @@ function loadNavBar(){
     const navbar = document.querySelector("#nav");
     if(loginData.length < 1){
         navbar.innerHTML = `<div id="navbar">
-            <div id="logo">EVERSHADE</div>
+            <div id="logo"><a href="index.html">EVERSHADE</a></div>
             <div>
             <input type="search" placeholder="Search" id="search-bar"/>
             </div>
@@ -22,7 +22,7 @@ function loadNavBar(){
             </div>`
     } else{
         navbar.innerHTML = `<div id="navbar">
-            <div id="logo">EVERSHADE</div>
+            <div id="logo"><a href="index.html">EVERSHADE</a></div>
             <div>
             <input type="search" placeholder="Search" id="search-bar"/>
             </div>

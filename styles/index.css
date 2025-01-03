@@ -34,10 +34,12 @@ h4{
     justify-content: center;
     align-items: center;
 }
-#logo{
+#logo > a{
+    cursor: pointer;
     color: #646F58;
     font-weight:900;
 }
+
 #nav-links > div > a {
     text-decoration: none;
     color: #504B3A;
