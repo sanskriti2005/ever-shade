@@ -29,6 +29,7 @@ function loadNavBar(){
             <div id="nav-links">
                 <div><a href=""><div><i class="fa-solid fa-store fa-lg"></i></div><div><h6>Stores & Services</h6><p>Choose your store</p></div></a></div>
                 <div><a href=""><div><i class="fa-solid fa-users-between-lines fa-lg"></i></div><div><h6>Community</h6></div></a></div>
+                <div></div>
                 <div><a href="wishlist.html"><i class="fa-solid fa-heart fa-lg"></i></a></div>
                 <div><a href="cart.html"><i class="fa-solid fa-basket-shopping fa-lg"></i></a></div>
             </div>
