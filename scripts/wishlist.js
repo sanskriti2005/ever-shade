@@ -71,6 +71,46 @@ window.removeFromFavs = async (buttonEl) => {
     }
 }
 
+window.addToCart = async (buttonEl) => {
+    const productId = buttonEl.parentElement.id
+    const products = []
+    if (loginData.length < 1) {
+      alert("Please Sign-in to build a cart")
+    } else{
+      try {
+        const cartProds = await fetchData("newArrivalProducts", products)
+        const cart = loginData.cart
+        const userId = loginData.id
+        cartProds.forEach(async (item) => {
+          if(item.id == productId){
+            const findProd = cart.find((item) => item.id == productId)
+            if(!findProd){
+              // push item to wishlist
+              cart.push(item)
+              loginData.cart = cart
+              // and update the user's data in the localStorage
+              localStorage.setItem("loginData", JSON.stringify(loginData));
+  
+              // Now update the firestore users db
+              try {
+                const userDocRef = doc(db, "users", userId);
+                await setDoc(userDocRef, { cart }, { merge:true })
+                alert("Item succesfully added to cart!")
+              } catch (error) {
+                alert("Problem updating the database with the product you added in cart")
+                console.log(error)
+              }
+            } else{
+              alert("Product is alraedy there in your cart")
+            }
+          }
+        })
+      } catch (error) {
+        alert("Sorry, could not add item to your cart, please try again")
+      }
+    }
+  }
+
 const fetchData = async (collectionName, arr) => {
     try {
       const res = collection(db, collectionName)

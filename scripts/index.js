@@ -105,7 +105,7 @@ window.addToCart = async (buttonEl) => {
       const userId = loginData.id
       cartProds.forEach(async (item) => {
         if(item.id == productId){
-          const findProd = wishlist.find((item) => item.id == productId)
+          const findProd = cart.find((item) => item.id == productId)
           if(!findProd){
             // push item to wishlist
             cart.push(item)
