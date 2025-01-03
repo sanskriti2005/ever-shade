@@ -15,7 +15,7 @@ if (dataToBeDisplayed < 0) {
 } else {
     displayContainer.innerHTML = "";
     dataToBeDisplayed.forEach((item) => {
-        displayContainer.innerHTML += `<div class="card new-arrivals-card">
+        displayContainer.innerHTML += `<div class="product-card card new-arrivals-card">
             <img src="https:${item.image_link}"
                 alt="${item.product_type} Image">
                 <h5>${item.name}</h5>
