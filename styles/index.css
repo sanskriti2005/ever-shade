@@ -277,6 +277,83 @@ h4{
     background-color: #1E1E24;
     color: #F7EBE8;
 }
+/* modal styling */
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+    height: 85%;
+    padding: 1.8rem;
+    border-radius: 10px;
+    scrollbar-width: none;
+    border: none;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+.modal-container > div:first-child{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.3rem;
+    border: none;
+}
+.close-btn{
+    border: none;
+    background-color: white;
+}
+.close-btn{
+    cursor: pointer;
+}
+.prod{
+    display: flex;
+    margin: auto;
+    flex: 1;
+}
+.prod-img{
+    width: 50%;
+    height: auto;
+    flex: 1;
+}
+.prod-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+
+}
+.prod-info{
+    margin-left: 3rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.prod-info > h5{
+    font-size: 2rem;
+}
+.prod-info > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.prod-info > div > button{
+    border: none;
+    background: white;
+    cursor: pointer;
+    margin: 0.2rem;
+}
+.prod-info > button{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.2rem;
+    font-weight: 600;
+}
+.prod-info > button:hover{
+    cursor: pointer;
+}
+
 
 /* media queries */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
@@ -327,3 +404,5 @@ h4{
         scrollbar-width: 0;
     }
 }
+
+

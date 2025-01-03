@@ -43,7 +43,7 @@ window.addToCart = async (buttonEl) => {
                             const userDocRef = doc(db, "users", userId);
                             await setDoc(userDocRef, { cart }, { merge: true })
                             alert("Item succesfully added to cart!")
-                            window.location.reload
+                            window.location.reload()
                         } catch (error) {
                             alert("Problem updating the database with the product you added in cart")
                             console.log(error)
@@ -87,7 +87,7 @@ window.removeFromFavs = async (buttonEl) => {
                             const userDocRef = doc(db, "users", userId);
                             await setDoc(userDocRef, { wishlist }, { merge: true })
                             alert("Item succesfully removed from wishlist")
-                            window.location.reload
+                            window.location.reload()
                         } catch (error) {
                             alert("Problem updating the database with the product you removed in wishlist")
                             console.log(error)
@@ -129,7 +129,7 @@ window.addToFavs = async (buttonEl) => {
                             const userDocRef = doc(db, "users", userId);
                             await setDoc(userDocRef, { wishlist }, { merge: true })
                             alert("Item succesfully added to wishlist!")
-                            window.location.reload
+                            window.location.reload()
                         } catch (error) {
                             alert("Problem updating the database with the product you added in wishlist")
                             console.log(error)
@@ -173,7 +173,7 @@ window.removeFromCart = async (buttonEl) => {
                             const userDocRef = doc(db, "users", userId);
                             await setDoc(userDocRef, { cart }, { merge: true })
                             alert("Item succesfully removed from cart")
-                            window.location.reload
+                            window.location.reload()
                         } catch (error) {
                             alert("Problem updating the database with the product you removed in cart")
                             console.log(error)
