@@ -21,7 +21,7 @@ if (dataToBeDisplayed < 0) {
         card.innerHTML = `
           <img src="https:${item.image_link}" alt="${item.product_type} Image">
           <h5>${item.name}</h5>
-          <p>${item.description.slice(0, 50)}</p>
+          <p class="description">${item.description.slice(0, 50)}</p>
           <p class="price">$${item.price}</p>
           <div id="${item.id}">
               <button type="button" onclick="removeFromFavs(this)"><i class="fa-solid fa-heart-circle-xmark"></i></button>
