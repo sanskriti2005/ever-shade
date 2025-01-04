@@ -45,7 +45,7 @@ if (dataToBeDisplayed < 0) {
                   </div>
                   <div class="prod-info">
                       <h5>${item.name}</h5>
-            <p>${item.description}</p>
+            <p class="description">${item.description}</p>
             <p class="price">$${item.price}</p>
             <div id="${item.id}">
                 <button type="button" onclick="removeFromCart(this)"><i class="fa-solid fa-trash"></i></button>

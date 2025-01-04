@@ -63,7 +63,7 @@ const displaynewArrivalProducts = async () => {
                 </div>
                 <div class="prod-info">
                     <h5>${item.name}</h5>
-          <p>${item.description}</p>
+          <p class="description">${item.description}</p>
           <p class="price">$${item.price}</p>
           <div id="${item.id}">
               <button type="button" onclick="addToFavs(this)"><i class="fa-solid fa-heart fa-lg"></i></button>
