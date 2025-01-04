@@ -24,3 +24,16 @@ This project integrates Firebase for user authentication, cart and wishlist mana
   - JavaScript 
   - Firebase 
 
+## Screenshots
+
+Here are some screenshots of the EverShade platform in action:
+
+   ![Homepage Screenshot](./screenshots/homepage.png)
+
+   ![Product Modal Screenshot](./screenshots/modal.png)
+
+   ![Wishlist Screenshot](./screenshots/wishlist.png)
+
+   ![Cart Screenshot](./screenshots/cart.png)
+
+   ![Login Page Screenshot](./screenshots/signin.png)
