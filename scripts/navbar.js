@@ -17,7 +17,7 @@ function loadNavBar(){
             </div>
         </div>
         <div id="sign-up">
-            <div><a href=""><div><h6>Sign-In</h6><p>for FREE shipping</p></div></a></div>
+            <div><a href="signin.js"><div><h6>Sign-In</h6><p>for FREE shipping</p></div></a></div>
             <button type="button" onclick="signup()">Sign-up</button>
             </div>`
     } else{
@@ -33,8 +33,12 @@ function loadNavBar(){
                 <div><a href="wishlist.html"><i class="fa-solid fa-heart fa-lg"></i></a></div>
                 <div><a href="cart.html"><i class="fa-solid fa-basket-shopping fa-lg"></i></a></div>
             </div>
-        </div>`
+        </div>
+        `
     }
     
 }
 loadNavBar();
+window.signup = () => {
+    window.location.href = "signup.html"
+}
