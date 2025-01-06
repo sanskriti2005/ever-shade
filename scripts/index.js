@@ -47,7 +47,7 @@ const displaynewArrivalProducts = async () => {
         `;
 
         // Add click event listener for redirection
-        card.addEventListener("click", () => redirect(item));
+        card.addEventListener("click", (e) => redirect(item));
 
         // Append the card to the container
         newArrivalsCont.appendChild(card);

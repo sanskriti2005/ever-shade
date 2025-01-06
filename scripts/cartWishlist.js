@@ -19,6 +19,7 @@ const fetchData = async (collectionName, arr) => {
 }
 // add to cart function
 window.addToCart = async (buttonEl) => {
+    event.stopPropagation()
     const productId = buttonEl.parentElement.id
     const products = []
     if (loginData.length < 1) {
@@ -61,6 +62,7 @@ window.addToCart = async (buttonEl) => {
 
 //   remove from favorites
 window.removeFromFavs = async (buttonEl) => {
+    event.stopPropagation()
     const productId = buttonEl.parentElement.id
     const products = []
     if (loginData.length < 1) {
@@ -105,6 +107,7 @@ window.removeFromFavs = async (buttonEl) => {
 
 // add to favs
 window.addToFavs = async (buttonEl) => {
+    event.stopPropagation()
     const productId = buttonEl.parentElement.id
     const products = []
     if (loginData.length < 1) {
@@ -147,6 +150,7 @@ window.addToFavs = async (buttonEl) => {
 
 // remove from cart
 window.removeFromCart = async (buttonEl) => {
+    event.stopPropagation()
     const productId = buttonEl.parentElement.id
     const products = []
     if (loginData.length < 1) {
