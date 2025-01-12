@@ -2,7 +2,7 @@ import { loginData } from "./loginData.js";
 function loadNavBar(){
     // catch the navbar div element
     const navbar = document.querySelector("#nav");
-    if(!loginData || loginData.length < 1){
+    if(!loginData || loginData.length < 1 || loginData === undefined){
         navbar.innerHTML = `<div id="navbar">
             <div id="logo"><a href="index.html">EVERSHADE</a></div>
             <div>
